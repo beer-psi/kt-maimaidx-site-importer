@@ -118,7 +118,7 @@ function addNav() {
 
 		const navDans = document.createElement("a")
 		const navDansText = "Import dan and matching class"
-		navDans.onclick = executeDanAndClassImport;
+		navDans.onclick = () => executeDanAndClassImport(document);
 		navDans.append(navDansText)
 		navHtml.append(navDans)
 	}
